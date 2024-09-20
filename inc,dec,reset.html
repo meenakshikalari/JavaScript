@@ -1,0 +1,53 @@
+<!-- increment, decrement,reset-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>increment,decrement,rerset</title>
+    <style>
+      button{
+         border-color:red;
+         padding:20px;
+         background-color:aqua;
+         font-weight:bold;
+        }
+        h1{
+         border-radius: 2px solid black;
+         font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+    </style>
+</head>
+<body>
+   <center>
+    <h1>count:<span id="count">0</span></h1>
+    <button onclick="inc()" >increment</button>
+    <button onclick="dec()">decrement</button>
+    <button onclick="reset()">reset</button>
+   </center>
+<script>
+    //increment
+    //dcerement
+    //reset
+     function inc()
+     {
+        let x = document.getElementById("count").innerHTML  //x=0
+        let value = parseInt(x)+1
+        document.getElementById("count").innerHTML=value
+     }
+
+     function dec()
+     {
+        let x=document.getElementById("count").innerHTML
+        let value=parseInt(x)-1
+        document.getElementById("count").innerHTML= value
+     }
+
+     function reset()
+     {
+        let x=document.getElementById("count").innerHTML=0
+
+     }
+</script>
+</body>
+</html>

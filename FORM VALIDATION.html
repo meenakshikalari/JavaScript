@@ -1,0 +1,67 @@
+<!--
+    foem validation with script
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form validation</title>
+
+
+</head>
+<body>
+    
+    <center>
+        <h1>Form validation</h1>
+ <form onsubmit="formSubmit()">
+
+<label>fullname:</label>
+<input type="text" id="name" name="name"/>
+
+<br><br>
+<label>emailid:</label>
+<input type="email" id="email"  name="email"/>
+
+<br><br>
+<label>password:</label>
+<input type="password" id="pswd" name="password"/>
+
+<br><br>
+<label>confirm password:</label>
+<input type="password" id="cpswd" name="cpswd"/>
+
+<br><br>
+<input type="submit"/>
+ </form>
+ </center>
+
+ <script>
+function formSumbit()
+{
+    let name = document.getElementById("name").value
+    let email = document.getElementById("email").value
+    let password = document.getElementById("pswd").value
+    let cpassword = document.getElementById("cpswd").value
+
+    if(name.length<6)
+    {
+        alert("please atleast definr lessthan(<)six charecterss for username..!")
+    }
+    else if(password != cpassword)
+    {
+      alert("password is does not matched..!")
+    }
+    else{
+        alert("form has success..!")
+        localStorage.setItem("fullname" , name)
+localStorage.setItem("emailid", email)
+localStorage.setItem("password", password)
+localStorage.setItem("confirm password", cpassword)
+    }
+}
+
+</script>
+    
+</body>
+</html>

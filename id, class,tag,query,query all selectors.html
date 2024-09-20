@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>selectors</title>
+</head>
+<body>
+    <div id="myid">
+        <h1>
+            frontend
+        </h1>
+        <p>
+            This is the frontend class
+        </p>
+    </div>
+    <div class="myclass">
+        <h1>
+            backend
+
+        </h1>
+        <p>
+            This is the backend class
+        </p>
+    </div>
+    <script>
+        let a=document.getElementsByName("myid")
+        console.log(a);
+        let x=document.getElementsByClassName("myclass")
+        console.log(x)
+        let y=document.getElementsByTagName("tagname")
+        console.log(y)
+        let z=document.querySelector(".myclass")
+        console.log(z)
+        let b=document.querySelector("myid")
+        console.log(b)
+        let c=document.querySelectorAll("#myid")
+        console.log(c)
+    
+    </script>
+</body>
+</html>

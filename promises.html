@@ -1,0 +1,38 @@
+<!--
+    promises are handling the async function. it takes the two arments
+    1.resolve--indicates   .then()
+    2.reject--indicates    .catch()/.err()
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width" initial-scale=1.0">
+    <title>promises</title>
+</head>
+<body>
+    <script>
+        let x = new Promise((resolve,reject)=>
+    {
+        let a=100
+        let b=200
+        if(a=="100" && b>a)   //change the greater than operator we get the failuree
+        {
+            resolve("success..!")
+        }
+        else{
+            reject("failure..!")
+        }
+    })
+    console.log(x)
+   x.then((res)=>{
+    console.log(res)
+   })
+    // .catch((error)=>{
+    //     console.log(error)
+    // })
+
+
+</script>
+</body>
+</html>

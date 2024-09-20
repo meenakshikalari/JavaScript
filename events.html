@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>events</title>
+</head>
+<body>
+    <button onclick="app()">alert</button>
+    <button ondblclick="app1()">add</button>
+    <button onmouseover="app2()">update</button>
+    <button onmouseout="app3()">delete</button>
+    <button onkeypress="app4()">show</button>
+
+    <h1 id="head"></h1>
+<br><br>
+<input type="text" id="user" onkeyup="app5()">
+<!--<button onclick=app5()>add</button>-->
+<br><br>
+<p>current data:<span id="data">current data</span>
+
+</p>
+<script>
+function app5()
+{
+let x=document.getElementById("user").value
+let y=document.getElementById("data").innerHTML=x
+}
+
+function app(){
+    alert("hello we are learning events")
+}
+
+function app1(){
+    let x=document.getElementById("head").innerHTML="moorthy..!"
+}
+
+function app2()
+{
+    let x=document.getElementById("head").innerHTML="besant tecnologies"
+}
+
+function app3(){
+    let x=document.getElementById("head")
+    x.style.display="none"
+}
+function app4(){
+    let x=document.getElementById("head")
+    X.style.display="block"
+}
+//events are used to handling the functions
+// onclick
+//ondbclick
+//on mouseover
+//onmouseout
+//onkeypress
+//onkeyup
+//onsubmit
+</script>
+</body></html>
+
+
